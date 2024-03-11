@@ -1,11 +1,11 @@
 ---
 layout: post
-title: A Project in Modern C++
+title: Digital Rain Project Blog
 tags: cpp coding project
 categories: demo
 ---
 
-This is my first paragraph...
+Greetings, fellow coding enthusiasts!
 
 ## This is a Heading
 
