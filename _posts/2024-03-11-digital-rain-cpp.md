@@ -6,6 +6,8 @@ categories: demo
 ---
 ## Introduction
 
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/raining.png">
+
 Greetings, fellow coding enthusiasts!
 
 I would like to present to you my C++ Programming project, which demonstrates a falling matrix effect, something like what can be seen in the movie "The Matrix".
@@ -52,6 +54,11 @@ The design of the rain was set within the DigitalRain class:
 - the sleep time controlled the speed at which a character would wall down the screen.
 - the count simply keeps a count of every `DigitalRain` object created.
 
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/getset.png">
+
+*Fig. 3 DigitalRain class*
+
+
 # Testing :
 Testing and rendereing of the rain was doing in RunDigitalRain. I untilised procedural programming and object oriented programming in RunDigitalRain.
 
@@ -61,17 +68,37 @@ Testing and rendereing of the rain was doing in RunDigitalRain. I untilised proc
 - UpdateRain(): updates the positions of the rain droplets on the screen
 - RenderRain(): renders rain on the screen and chooses where the next rain droplet should print
 
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/display.png">
+
+*Fig 4 Rain Display objects*
+
 ## Algorithms
 
 # Initialisation / Updating
 
 For the most part, the algorithms used were quite simple. I had tried to use more complex algorithms  like `for each` and `sort` to sort through each 
 character in the string but was unable to get that code to function the way in wanted it to. In the end I mostly used `if` statements and `for` loops.
-In `InitRain()` I used a simple if statement to initialise the raindrops. The struct for this is set in the RunDigitalRain.cpp file. I decided to used a structure for the rain as 
+In `InitRain()` I used a simple if statement to initialise the raindrops. The struct for this is set in the RunDigitalRain.cpp file. 
+
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/initrain.png">
+
+*Fig 5*
+
+I decided to used a structure for the rain as 
 it made passing and managing raindrops in each function more straightforward.
+
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/struct.png">
+
+*Fig 6*
+
 
 In `UpdateRain()` the position of a raindrop is being updated. `raindrops[i].y++` moved the rain drop down the screen. So rather than printing the blank spaces above the character,
 the character position on the y - axis was being incremented by 1.
+
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/updaterain.png">
+
+*Fig 7*
+
 
 # Rendering
 
@@ -79,6 +106,9 @@ The line `for (const std::string& str : dr.GetCharacterString())` stored the vec
 At first, I had planned to use COORD to designate the position at which each character would start at, but i ended up only using the ANSI escape sequence instead.
 The raindrops are printed in CYAN. Unfortunately, I was unable to cycle through the defined colors so that each droplet was a diffrent color.
 
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/render.png">
+
+*Fig 8*
 
 
 ## Problem Solving
@@ -88,11 +118,16 @@ I was able to access separate characters in the vector but unable to print all o
 I had search online and looked into multiple resources on how to fix this issues but in the end I was unable to do so. I was also unable to cycle through the colours so that the droplets could be printed in different colors, but I was able set the printed character in a new position. 
 I did that by clearing the screen and reprinted it in a lower area of the screen (`raindrops[i].y++`). This was a major problem which, among other things, contributed to the many problems and bugs I found in my project.
 
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/colors.png">
+
+*Fig 9*
 
 ## Conclusion and Result
 
 I was able to create a Digital Rain Project using Procedural C++ Programming and Object Oriented Programming to creted multiple DigitalRain objects, pass objects between files and used them. I was able to define a character string, screen length and width and a sleep time to suit my own liking and I was able to make use of algorithms to create a falling matrix effect.
 
 <img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/Rain.gif">
+
+*Fig 10 Final Product*
 
 ## Thank you for Reading this Blog!!!
