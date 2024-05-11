@@ -93,6 +93,6 @@ I did that by clearing the screen and reprinted it in a lower area of the screen
 
 I was able to create a Digital Rain Project using Procedural C++ Programming and Object Oriented Programming to creted multiple DigitalRain objects, pass objects between files and used them. I was able to define a character string, screen length and width and a sleep time to suit my own liking and I was able to make use of algorithms to create a falling matrix effect.
 
-<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/Recording #5.gif">
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/Rain.gif">
 
 ## Thank you for Reding this Blog!!!
