@@ -84,7 +84,7 @@ The raindrops are printed in CYAN. Unfortunately, I was unable to cycle through 
 ## Problem Solving
 
 I faced many problems when doing this project, which came mostly from the using a vector of a string and displaying each character from that vector on the screen.
-I was able to access separate characters in the vector but unable to print all of them. I could only print the last one.
+I was able to access separate characters in the vector but unable to print all of them. I could only print the last character in the string.
 I had search online and looked into multiple resources on how to fix this issues but in the end I was unable to do so. I was also unable to cycle through the colours so that the droplets could be printed in different colors, but I was able set the printed character in a new position. 
 I did that by clearing the screen and reprinted it in a lower area of the screen (`raindrops[i].y++`). This was a major problem which, among other things, contributed to the many problems and bugs I found in my project.
 
@@ -95,4 +95,4 @@ I was able to create a Digital Rain Project using Procedural C++ Programming and
 
 <img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/Rain.gif">
 
-## Thank you for Reding this Blog!!!
+## Thank you for Reading this Blog!!!
