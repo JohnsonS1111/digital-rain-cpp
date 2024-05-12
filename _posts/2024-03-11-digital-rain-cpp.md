@@ -134,7 +134,7 @@ As shown above, I already had all the colors I wanted to use defined.
 One problem I did overcome was setting the character in a new position. I did not want to move a character down the screen by printing spaces above that character, so instead,
 I did that by clearing the screen and reprinted it in a lower area of the screen (`raindrops[i].y++`). This was a major problem which, among other things, contributed to the many problems and bugs I found in my project.
 
-## **Conclusion and Result**
+# **Conclusion and Result**
 
 I was able to create a Digital Rain Project using Procedural C++ Programming and Object Oriented Programming to creted multiple DigitalRain objects, pass objects between files and used them. I was able to define a character string, screen length and width and a sleep time to suit my own liking and I was able to make use of algorithms to create a falling matrix effect.
 
