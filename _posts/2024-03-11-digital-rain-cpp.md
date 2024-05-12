@@ -127,14 +127,12 @@ Originally, I had planned for each character to be printed in a different color,
 
 <img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/colors.png">
 
+*Fig 10 Defined colors*
+
 As shown above, I already had all the colors I wanted to use defined.
 
 One problem I did overcome was setting the character in a new position. I did not want to move a character down the screen by printing spaces above that character, so instead,
 I did that by clearing the screen and reprinted it in a lower area of the screen (`raindrops[i].y++`). This was a major problem which, among other things, contributed to the many problems and bugs I found in my project.
-
-<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/colors.png">
-
-*Fig 9*
 
 ## **Conclusion and Result**
 
@@ -142,6 +140,6 @@ I was able to create a Digital Rain Project using Procedural C++ Programming and
 
 <img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/Rain.gif">
 
-*Fig 10 Final Product*
+*Fig 11 Final Product*
 
 ## Thank you for Reading this Blog!!!
