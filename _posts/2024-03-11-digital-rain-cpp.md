@@ -2,6 +2,7 @@
 layout: post
 title: Digital Rain Project Blog
 tags: cpp coding project
+categories: demo
 ---
 # **Introduction**
 
