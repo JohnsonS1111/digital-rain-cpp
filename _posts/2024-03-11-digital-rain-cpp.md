@@ -2,9 +2,8 @@
 layout: post
 title: Digital Rain Project Blog
 tags: cpp coding project
-categories: demo
 ---
-# Introduction
+# **Introduction**
 
 <img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/raining.png">
 
@@ -26,7 +25,7 @@ One site I looked at indeptly before doing this project was [GeekForGeeks](https
 Here they showed in a very simple way how the effect can be created. I also looked many other github repositories, but none of those examples were in C++, so I was not really able to
 grasp anything from them.
 
-# Design and Test
+# **Design and Test**
 
 For the design and testing of the Digital Rain effect, I used Microsoft Visual Studio 2022 as an IDE for writing code and the code was written in Procedural and Object Oriented C++.
 To keep it simple, I implemeted simple "getters" and "setters" that allows me to set the screen size (i.e., the area where the rain appears) and the character string, as well as the sleep time (controls the speed at which the rain "falls"). 
@@ -72,7 +71,7 @@ Testing and rendereing of the rain was doing in RunDigitalRain. I untilised proc
 
 *Fig 4 Rain Display objects*
 
-# Algorithms
+# **Algorithms**
 
 ## Initialisation / Updating
 
@@ -111,18 +110,33 @@ The raindrops are printed in CYAN. Unfortunately, I was unable to cycle through 
 *Fig 8*
 
 
-# Problem Solving
+# **Problem Solving**
 
 I faced many problems when doing this project, which came mostly from the using a vector of a string and displaying each character from that vector on the screen.
 I was able to access separate characters in the vector but unable to print all of them. I could only print the last character in the string.
-I had search online and looked into multiple resources on how to fix this issues but in the end I was unable to do so. I was also unable to cycle through the colours so that the droplets could be printed in different colors, but I was able set the printed character in a new position. 
+I had search online and looked into multiple resources on how to fix this issues but I was unable to find the reason for this. I looked at my algorithms and how I was printing characters on the screen.
+In theory, getting the string out of the vector and then separating each character in the string to be printed in succession should work.
+
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/render2.png">
+
+*Fig 9 Sorting through the vector*
+
+My only guess as to why this could not work is because of the if statement `if (raindrops[i].active = true)`. It could be an issue of the operation never leaves the if statement because `raindrop[i].active` is always true. I tried to manipulate the loop and also used the `std::sort` algorithm, but I was unable to fix that issue.
+
+Originally, I had planned for each character to be printed in a different color, but I was unable to correctly apply that feature.
+
+<img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/colors.png">
+
+As shown above, I already had all the colors I wanted to use defined.
+
+One problem I did overcome was setting the character in a new position. I did not want to move a character down the screen by printing spaces above that character, so instead,
 I did that by clearing the screen and reprinted it in a lower area of the screen (`raindrops[i].y++`). This was a major problem which, among other things, contributed to the many problems and bugs I found in my project.
 
 <img src="https://raw.githubusercontent.com/JohnsonS1111/digital-rain-cpp/main/docs/assets/images/colors.png">
 
 *Fig 9*
 
-## Conclusion and Result
+## **Conclusion and Result**
 
 I was able to create a Digital Rain Project using Procedural C++ Programming and Object Oriented Programming to creted multiple DigitalRain objects, pass objects between files and used them. I was able to define a character string, screen length and width and a sleep time to suit my own liking and I was able to make use of algorithms to create a falling matrix effect.
 
