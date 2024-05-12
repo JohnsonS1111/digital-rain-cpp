@@ -1,2 +1,2 @@
 # digital-rain-cpp
-This is a new test repository for a GitHub pages site for my Digital Rain C++ Project.
+This is the blod I created for My DigitalRain Project, as part of the C++ Programming Module
